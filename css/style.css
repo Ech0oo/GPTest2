@@ -1,0 +1,56 @@
+.house{
+	display: inline-block;
+
+	margin: 0 auto;
+	overflow: hidden;
+/*	border: #C14BBE 1px dotted;*/
+}
+
+.roof{
+	width: 131px;
+	height: 65px;
+	overflow: hidden;
+}
+
+.roof:after{
+	content: "";
+	display: block;
+	position: relative;
+	width: 131px;
+	height: 130px;
+	top: 27px;
+	border-top: #000 2px solid;
+	border-left: #000 2px solid;
+
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.building{
+	display: inline-block;
+	border: #000 2px solid;
+}
+
+.floor{
+	overflow: hidden;
+}
+
+.window{
+	float: left;
+	width: 30px;
+	height: 30px;
+
+	margin: 15px;
+
+	border: #00f 2px solid;
+}
+
+.door{
+	float: right;
+	height: 50px;
+	width: 40px;
+
+	margin-right: 5px;
+
+	border: #f00 2px solid;
+}
